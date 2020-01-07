@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="669.0"
+	styleClass="custom-label" stylesheets="@Salary.css"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="edu.citytech.Salary.SalaryController">
+	<children>
+		<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eeeeea"
+			height="347.0" layoutX="323.0" layoutY="95.0" stroke="BLACK"
+			strokeType="INSIDE" width="313.0" />
+		<Button layoutX="14.0" layoutY="243.0" minWidth="50.0"
+			mnemonicParsing="false" onAction="#ClaculateSalary" prefHeight="36.0"
+			prefWidth="83.0" styleClass="Rbutton" text="Calculate" />
+		<Label layoutX="16.0" layoutY="158.0" minWidth="50.0"
+			text="Hours Worked:" />
+		<Label layoutX="14.0" layoutY="206.0" minWidth="50.0"
+			text="Hourly Wage:" />
+		<TextField fx:id="InputHrsWorked" layoutX="111.0"
+			layoutY="153.0" minWidth="50.0" prefHeight="27.0" prefWidth="133.0"
+			promptText="Enter hours worked" stylesheets="@Salary.css" />
+		<TextField fx:id="InputHlyWage" layoutX="111.0"
+			layoutY="201.0" minWidth="50.0" prefHeight="27.0" prefWidth="133.0"
+			promptText="Enter Hourly Wage" stylesheets="@Salary.css" />
+		<Label layoutX="353.0" layoutY="116.0" prefHeight="17.0"
+			prefWidth="115.0" text="Over Time Hours:" />
+		<Label layoutX="357.0" layoutY="157.0" minWidth="50.0"
+			text="Regular Hours:" />
+		<TextField fx:id="OTHours" editable="false" layoutX="463.0"
+			layoutY="113.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<TextField fx:id="RegHours" editable="false" layoutX="463.0"
+			layoutY="152.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<Label layoutX="362.0" layoutY="206.0" minWidth="50.0"
+			text="Over Time Pay:" />
+		<Label layoutX="360.0" layoutY="254.0" minWidth="50.0"
+			text="Regular Pay:" />
+		<TextField fx:id="OTPay" editable="false" layoutX="463.0"
+			layoutY="201.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<TextField fx:id="RegPay" editable="false" layoutX="463.0"
+			layoutY="249.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<Label layoutX="362.0" layoutY="302.0" minWidth="50.0"
+			text="Weekly Pay:" />
+		<Label layoutX="360.0" layoutY="350.0" minWidth="50.0"
+			text="Yearly Salary:" />
+		<TextField fx:id="WkPay" editable="false" layoutX="463.0"
+			layoutY="297.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<TextField fx:id="YrPay" editable="false" layoutX="463.0"
+			layoutY="345.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="text-field" />
+		<Label alignment="TOP_CENTER" layoutX="189.0" layoutY="10.0"
+			prefHeight="29.0" prefWidth="214.0" styleClass="button"
+			text="Weekly Salary" textAlignment="JUSTIFY">
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Label>
+		<Label alignment="CENTER" layoutX="206.0" layoutY="467.0"
+			prefHeight="29.0" prefWidth="214.0" styleClass="button"
+			text="Jalamang Janka" textAlignment="JUSTIFY">
+			<font>
+				<Font name="System Bold" size="24.0" />
+			</font>
+		</Label>
+		<Separator layoutX="259.0" layoutY="97.0"
+			orientation="VERTICAL" prefHeight="347.0" prefWidth="17.0" />
+		<Button layoutX="108.0" layoutY="243.0" minWidth="50.0"
+			mnemonicParsing="false" onAction="#Reset" prefHeight="36.0"
+			prefWidth="76.0" styleClass="bbutton" text="Reset" />
+		<Label layoutX="364.0" layoutY="384.0" minWidth="50.0"
+			text="Marginal Tax" />
+		<Label layoutX="365.0" layoutY="410.0" minWidth="50.0"
+			text="Net. Salary:" />
+		<TextField fx:id="NetPay" editable="false" layoutX="464.0"
+			layoutY="405.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="NetGrTax" />
+		<TextField fx:id="Tax" editable="false" layoutX="464.0"
+			layoutY="377.0" minWidth="50.0" prefHeight="27.0" prefWidth="127.0"
+			styleClass="NetGrTax" />
+		<Button layoutX="196.0" layoutY="242.0" minWidth="50.0"
+			mnemonicParsing="false" onAction="#Quit" prefHeight="36.0"
+			prefWidth="50.0" text="Quit" />
+	</children>
+</AnchorPane>

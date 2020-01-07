@@ -1,0 +1,52 @@
+.custom-label{
+	-fx-border-color:black;
+	-fx-min-width:10px;
+	-fx-min-height:10;
+	 -fx-text-fill: blue; 
+	-fx-border-insets: .55px;
+	
+
+}
+
+.text-field:disabled
+{
+    -fx-text-fill: #000;
+    -fx-opacity: 0.5;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+ 
+   
+    
+}
+
+
+
+.Rbutton {
+    -fx-color: rgb(32, 109, 2);
+}
+
+.bbutton {
+    -fx-color: rgb(109, 7, 2);
+}
+
+
+.NetGrTax{
+	-fx-border-color:black;
+	-fx-min-width:77px;
+	-fx-min-height:0;
+	 -fx-text-fill: blue; 
+	-fx-border-insets: .55px;
+	 -fx-background-color:eff3f6;
+
+}
+
+
+.NetGrax{
+-fx-background-image:url("//background.jpg");
+
+
+}
+
+
